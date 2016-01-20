@@ -12,6 +12,6 @@ Learning testing in angular with Dave: https://daveceddia.com/testing-angular-pa
 1. Create the spect file `src/greeting/greeting.spec.js`
 2. Inject app module and factory
   1. Create a local variable to be a reference to the factory
-	2. Bring the app module in using `beforeEach(module(moduleName))`.
-	3. Inject the factory in another `beforeEach`. the injected factory has `_` prefix and suffix. assign this to the variable from 2.1
+  2. Bring the app module in using `beforeEach(module(moduleName))`.
+  3. Inject the factory in another `beforeEach`. the injected factory has `_` prefix and suffix. assign this to the variable from 2.1
 3. Write the spec in `it()` blocks.
