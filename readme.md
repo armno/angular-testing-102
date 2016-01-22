@@ -15,3 +15,16 @@ Learning testing in angular with Dave: https://daveceddia.com/testing-angular-pa
   2. Bring the app module in using `beforeEach(module(moduleName))`.
   3. Inject the factory in another `beforeEach`. the injected factory has `_` prefix and suffix. assign this to the variable from 2.1
 3. Write the spec in `it()` blocks.
+
+## Jasmine syntax
+
+https://daveceddia.com/testing-angular-part-2-jasmine-syntax/
+
+- `describe` creates a group of tests. It is usually used to create a scenario/use case.
+- `beforeEach` runs before each test in its block.
+- `it` - a block of test
+- `expect` - assertion inside of `it` block. Should have 1 assertion in 1 test but in some cases it is OK to have more (manipulating data and then verify it).
+- Matchers `toEqual` and friends.
+
+- `module` loads an angular module. used in `beforeEach()`
+- `inject` takes a function that will get injected by angular's DI. used to assign injected modules to local variables to be used with the tests.
