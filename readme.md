@@ -28,3 +28,13 @@ https://daveceddia.com/testing-angular-part-2-jasmine-syntax/
 
 - `module` loads an angular module. used in `beforeEach()`
 - `inject` takes a function that will get injected by angular's DI. used to assign injected modules to local variables to be used with the tests.
+
+## Part 3: Testing in Angular World
+
+https://daveceddia.com/testing-angular-part-3-testing-recipes/
+
+- test pattern
+  1. import the module/service
+  2. inject the service (the one to test) in `beforeEach`. put it in a local variable to use with other tests.
+  3. write the tests
+- try to keep one assertion per test to keep the method small. a method should do just one thing.
